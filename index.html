@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>HUANG Sixuan's Personal Website</title>
+		<!-- add CSS to format the table -->
+		<style>
+			table {border-collapse: collapse;
+				font-family: Futura, Arial, sans-serif;}
+			th,td {padding: 10px;}
+			th {background-color: #808080;
+				border: 1px solid #808080;
+				color: #fff;}
+			td {background-color: #33FFFF;
+				border: 1px solid #808080;}
+		</style>
+	</head>
+
+	<body>
+		<h1>Welcome!</h1>
+		<h2>This is HUANG Sixuan's personal website</h2>
+
+		<!-- a paragraph that is updated to the current date and time -->
+		<p id="time"></p>
+		<script> 
+			window.onload=function(){ 
+			setInterval(function(){ 
+					var d = new Date();  
+					var y = d.getFullYear(); 
+					var mon = d.getMonth() + 1;  
+					var date = d.getDate();   
+					var h = d.getHours();  
+					var min = d.getMinutes();  
+					var s = d.getSeconds(); 
+					document.getElementById("time").innerHTML = 
+					'Current Date: '+ y + '/' + mon + '/' + date + '; '+ 
+					'Current Time: '+ h + ':' + min + ':'+ s},1000) }
+		</script>
+		
+		<!-- a hyperlink to send an email -->
+		<a href= "mailto:E0546347@u.nus.edu"> 
+			Email: E0546347@u.nus.edu
+		</a>
+		
+		<h3>1. Basic Information</h3>
+		<p>National University of Sinagpore</p>
+		<p>Master of Science in Business Analytics, </p>
+		<p>Semester 1, Academic Year 2020-2021</p>
+		
+		<h3>2. Module Schedule</h3>
+		<table style="width:60%" border="1">
+			<tr>
+				<th>Module Number</th>
+				<th>Module Name</th>
+				<th>Weekday</th>
+				<th>Time</th>
+			</tr>
+			<tr>
+				<td align="center">DBA5101</td>
+				<td align="center">Analytics in Managerial Economics</td>
+				<td align="center">Monday</td>
+				<td align="center">18:30-21:30pm</td>
+			</tr>
+			<tr>
+				<td align="center">DBA5106</td>
+				<td align="center">Foundation in Business Analytics</td>
+				<td align="center">Tuesday</td>
+				<td align="center">18:30-21:30pm</td>
+			</tr>
+			<tr>
+				<td align="center">BT5110</td>
+				<td align="center">Data Management and Warehousing</td>
+				<td align="center">Wednesday</td>
+				<td align="center">18:30-21:30pm</td>
+			</tr>
+			<tr>
+				<td align="center">DBA5102</td>
+				<td align="center">Business Analytics Capstone Module</td>
+				<td align="center">Thursday</td>
+				<td align="center">18:30-21:30pm</td>
+			</tr>
+			<tr>
+				<td align="center">DBA5103</td>
+				<td align="center">Operations Research and Analytics</td>
+				<td align="center">Friday</td>
+				<td align="center">18:30-21:30pm</td>
+			</tr>
+		</table>
+		
+		<ul style="list-style-type:square">
+			<li>BT5110 Tutorial session is at 20:30-21:30pm of Wednesday.</li>
+			<li>Reading week 1: 19 Sep 2020 ~ 27 Sep 2020.</li>
+			<li>Reading week 2: 14 Nov 2020 ~ 20 Nov 2020.</li>
+			<li>Examination week: 21 Nov 2020 ~ 5 Dec 2020.</li>
+		</ul>
+		
+		<h3>3. Academic Calendar</h3>
+		<p>Click the img below to get more information on Academic Calendar.</p>
+		<a href="http://www.nus.edu.sg/registrar/calendar">
+			<img src="acadcalendar.png" alt="acadcalendar">
+		</a>
+	</body>
+</html>
